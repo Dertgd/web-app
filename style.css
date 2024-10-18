@@ -1,6 +1,5 @@
-/* styles.css */
 * {
-    box-sizing: border-box; /* Упрощаем обработку размеров */
+    box-sizing: border-box;
 }
 
 body {
@@ -11,12 +10,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Полная высота экрана */
+    height: 100vh; 
 }
 
 .welcome-container {
-    width: 90%; /* Ширина 90% для мобильных устройств */
-    max-width: 400px; /* Максимальная ширина для больших экранов */
+    width: 90%; 
+    max-width: 400px; 
     padding: 20px;
     background-color: #fff;
     border-radius: 12px;
@@ -25,56 +24,56 @@ body {
 }
 
 .welcome-title {
-    font-size: 24px; /* Размер заголовка */
+    font-size: 24px; 
     color: #0078FF;
     margin: 0 0 10px;
 }
 
 .welcome-description {
-    font-size: 16px; /* Размер описания */
+    font-size: 16px; 
     color: #666;
     margin-bottom: 20px;
 }
 
 .welcome-image {
-    width: 100%; /* Адаптивная ширина изображения */
-    height: auto; /* Высота автоматически подстраивается */
+    width: 100%; 
+    height: auto; 
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
 .welcome-buttons {
     display: flex;
-    flex-direction: column; /* Кнопки вертикально */
-    gap: 10px; /* Промежуток между кнопками */
+    flex-direction: column; 
+    gap: 10px; 
 }
 
 .btn {
-    padding: 12px; /* Отступы кнопок */
-    font-size: 16px; /* Размер шрифта */
-    color: #fff; /* Цвет текста кнопок */
-    background-color: #0078FF; /* Цвет фона кнопок */
-    border: none; /* Убираем рамку */
-    border-radius: 5px; /* Уголки кнопок округлые */
-    cursor: pointer; /* Указываем, что это кнопка */
-    transition: background-color 0.3s; /* Плавный переход цвета */
+    padding: 12px; 
+    font-size: 16px;
+    color: #fff; 
+    background-color: #0078FF; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
 }
 
 .btn:hover {
-    background-color: #005bb5; /* Цвет кнопки при наведении */
+    background-color: #005bb5; 
 }
 
 /* Для мобильных устройств */
 @media (max-width: 400px) {
     .welcome-title {
-        font-size: 22px; /* Размер заголовка на маленьких экранах */
+        font-size: 22px; 
     }
 
     .welcome-description {
-        font-size: 14px; /* Размер описания на маленьких экранах */
+        font-size: 14px;
     }
 
     .btn {
-        font-size: 14px; /* Размер шрифта кнопок на маленьких экранах */
+        font-size: 14px;
     }
 }
