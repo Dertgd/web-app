@@ -11,41 +11,42 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Минимальная высота на весь экран */
+    height: 100vh; /* Полная высота экрана */
 }
 
 .welcome-container {
-    width: 100%; /* На всю ширину родителя */
-    max-width: 400px; /* Максимальная ширина */
+    width: 90%; /* Ширина 90% для мобильных устройств */
+    max-width: 400px; /* Максимальная ширина для больших экранов */
     padding: 20px;
     background-color: #fff;
-    border-radius: 12px; /* Края окна более округлые */
+    border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .welcome-title {
-    font-size: 24px; /* Размер шрифта чуть меньше */
+    font-size: 24px; /* Размер заголовка */
     color: #0078FF;
-    margin: 0 0 10px; /* Убрали лишние отступы */
+    margin: 0 0 10px;
 }
 
 .welcome-description {
-    font-size: 16px; /* Уменьшили размер шрифта для лучшей читаемости */
+    font-size: 16px; /* Размер описания */
     color: #666;
     margin-bottom: 20px;
 }
 
 .welcome-image {
-    width: 100%; /* Ширина изображения адаптивная */
-    border-radius: 8px; /* Уголки изображения тоже округлые */
+    width: 100%; /* Адаптивная ширина изображения */
+    height: auto; /* Высота автоматически подстраивается */
+    border-radius: 8px;
     margin-bottom: 20px;
 }
 
 .welcome-buttons {
     display: flex;
-    flex-direction: column; /* Кнопки расположены вертикально */
-    gap: 15px; /* Промежуток между кнопками */
+    flex-direction: column; /* Кнопки вертикально */
+    gap: 10px; /* Промежуток между кнопками */
 }
 
 .btn {
@@ -61,4 +62,19 @@ body {
 
 .btn:hover {
     background-color: #005bb5; /* Цвет кнопки при наведении */
+}
+
+/* Для мобильных устройств */
+@media (max-width: 400px) {
+    .welcome-title {
+        font-size: 22px; /* Размер заголовка на маленьких экранах */
+    }
+
+    .welcome-description {
+        font-size: 14px; /* Размер описания на маленьких экранах */
+    }
+
+    .btn {
+        font-size: 14px; /* Размер шрифта кнопок на маленьких экранах */
+    }
 }
