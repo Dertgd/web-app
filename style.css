@@ -1,3 +1,8 @@
+/* styles.css */
+* {
+    box-sizing: border-box; /* Упрощаем обработку размеров */
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f2f5;
@@ -6,54 +11,54 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Используем полную высоту экрана */
+    min-height: 100vh; /* Минимальная высота на весь экран */
 }
 
 .welcome-container {
-    width: 90%; /* Ограничиваем ширину */
-    max-width: 600px; /* Максимальная ширина */
+    width: 100%; /* На всю ширину родителя */
+    max-width: 400px; /* Максимальная ширина */
     padding: 20px;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Края окна более округлые */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .welcome-title {
-    font-size: 28px;
+    font-size: 24px; /* Размер шрифта чуть меньше */
     color: #0078FF;
-    margin-bottom: 10px;
+    margin: 0 0 10px; /* Убрали лишние отступы */
 }
 
 .welcome-description {
-    font-size: 18px;
+    font-size: 16px; /* Уменьшили размер шрифта для лучшей читаемости */
     color: #666;
     margin-bottom: 20px;
 }
 
 .welcome-image {
-    width: 100%;
-    border-radius: 8px;
+    width: 100%; /* Ширина изображения адаптивная */
+    border-radius: 8px; /* Уголки изображения тоже округлые */
     margin-bottom: 20px;
 }
 
 .welcome-buttons {
     display: flex;
-    flex-direction: column; /* Вертикальное расположение кнопок */
-    gap: 10px; /* Промежуток между кнопками */
+    flex-direction: column; /* Кнопки расположены вертикально */
+    gap: 15px; /* Промежуток между кнопками */
 }
 
 .btn {
-    padding: 12px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #0078FF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    padding: 12px; /* Отступы кнопок */
+    font-size: 16px; /* Размер шрифта */
+    color: #fff; /* Цвет текста кнопок */
+    background-color: #0078FF; /* Цвет фона кнопок */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Уголки кнопок округлые */
+    cursor: pointer; /* Указываем, что это кнопка */
+    transition: background-color 0.3s; /* Плавный переход цвета */
 }
 
 .btn:hover {
-    background-color: #005bb5;
+    background-color: #005bb5; /* Цвет кнопки при наведении */
 }
